@@ -2,33 +2,14 @@ import Link from "next/link";
 import Image from 'next/image';
 import ReviewBox from "../components/ReviewBox"; 
 import ImageBox from "../components/ImageBox"; 
+import Nav from "../components/Nav"
 
 export default function Review() {
     return (
         <div>
-            <div className="float-end p-4">
-                <Image
-                    src="/review.jpg" // Path to your image (local or external)
-                    width={30} // Width in pixels
-                    height={30} // Height in pixels
-                    alt="Picture of the author" // Alt text for accessibility
-                    className="rounded-full" // Apply rounded shape to the image
-                />
-            </div>
-            <span className="hidden md:block float-end text-sm pt-6 font-semibold">Welcome!</span>
-            <nav className="flex">
-                <h1 className="p-7 ">
-                    <a href="/">
-                        <span className="cursor-pointer px-1 text-xs md:text-xs lg:text-base font-bold">S P O T T A</span>
-                        <span className="rounded-full bg-blue-600 px-1.5 py-0.5 text-sm font-medium text-white sm:text-xs/5">
-                            NG
-                        </span>
-                    </a>
-                </h1>
-                <div className="pt-5 md:pl-10">
-                    <input type="text" className="lg:w-[35em] md:w-[25em] w-7em px-4 md:h-12 h-8 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-900 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 md:placeholder:text-lg" placeholder="Bonny and Clyde Street, Ajao Estate Lagos." name="search"/>
-                </div>
-            </nav>
+            <header>
+                <Nav />
+            </header>
             
             <main className="p-4">
                 <div className="grid">
