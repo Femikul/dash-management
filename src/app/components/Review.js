@@ -19,7 +19,7 @@ export default function Review({ className, name, review }) {
                     Bonny and Clyde Street, 
                     </span>
                 </div>
-                <h1 className='text-lg text-center capitalize truncate'>{review}</h1>
+                <h1 className='text-xs md:text-base lg:text-lg text-center capitalize truncate'>{review}</h1>
 <span className='flex flex-row gap-1 p-2'>
     <FaThumbsUp className='text-gray-500'/> <span className='text-md'>0</span>
     <FaThumbsDown className='text-gray-500'/><span className='text-md'>0</span>
